@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Restaurant "DON  LUXOR"</string>
-
+    <string name="userName">Login</string>
+    <string name="password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="login_cancel_button">Cancel</string>
+    <string name="login_error_message">La contraseña debe contener 6 caracteres</string>
 </resources>
