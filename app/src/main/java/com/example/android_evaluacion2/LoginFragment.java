@@ -30,15 +30,20 @@ public class LoginFragment extends Fragment {
                      passwordTextInput.setError(getString(R.string.login_error_message));
                  }else{
                      passwordTextInput.setError(null);
+                     ((NavigationHost) getActivity()).navigateTo(new Homefragment(),false);
                  }
              }
          });
          passwordEditText.setOnKeyListener(new View.OnKeyListener() {
              @Override
-             public boolean onKey(View v, int keyCode, KeyEvent event) {
+             public boolean onKey(View v, int i, KeyEvent keyEvent) {
                  if (isPasswordValid(passwordEditText.getText())){
-                     passwordTextInput.setError(null);}
-                 return false;
+                     passwordTextInput.setError(getString(R.string.login_error_message));
+                 }else {
+                     passwordTextInput.setError(null);
+
+                 }
+                return false;
              }
          });
 
