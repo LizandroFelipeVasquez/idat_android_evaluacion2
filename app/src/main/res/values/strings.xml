@@ -6,7 +6,13 @@
     <string name="login_cancel_button">Cancel</string>
     <string name="login_error_message">La contraseña debe contener 6 caracteres</string>
     <string name="search_title">Busquedad</string>
-    <string name="filter_title">titulo</string>
+    <string name="filter_title">Video</string>
     <string name="food_title">titulo</string>
-    <string name="description">Comida Peruana</string>
+    <string name="description">Informacion de la fundacion de la empresa</string>
+    <string name="soup">SOPA</string>
+    <string name="cakes">PASTELES</string>
+    <string name="drinks">BEBIDAS</string>
+    <string name="ice">HELADOS</string>
+    <string name="special">ESPECIALES</string>
+
 </resources>

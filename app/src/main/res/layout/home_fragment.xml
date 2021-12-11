@@ -5,63 +5,160 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Homefragment"
-    >
+    android:background="@drawable/fondomenu">
+
+    <ImageView
+        android:layout_width="890dp"
+        android:layout_height="252dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/menufondo" />
+
+
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/app_bar"
-        style="@style/widget.restaurant.Toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        app:title="@string/app_name"
-        app:navigationIcon="@drawable/ic_baseline_add_shopping_cart_24"
-        />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            style="@style/widget.restaurant.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:navigationIcon="@drawable/ic_baseline_add_shopping_cart_24"
+            app:title="@string/app_name" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="180dp"
-        android:layout_height="200dp"
+        android:layout_height="260dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="300dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
-        android:layout_marginTop="70dp"
         app:cardBackgroundColor="@color/black"
         app:cardCornerRadius="4dp"
         app:cardElevation="@dimen/cardview_default_elevation">
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:background="#ffffff"
+            android:background="#fff8e1"
             android:orientation="vertical"
-            android:padding="8dp"
-            >
+            android:padding="8dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
                 android:text="@string/food_title"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                />
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/description"
+                android:textStyle="italic"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
 
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="home app"
-            android:textSize="24dp"
-            />
+            android:textSize="24dp" />
 
-   </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_drinks"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="300dp"
+        android:backgroundTint="@color/purple_200"
+        android:backgroundTintMode="add"
+        android:insetRight="10dp"
+        android:text="@string/drinks"
+        android:drawableLeft="@drawable/ic_baseline_star_24"
+        app:backgroundTint="#ffff8b"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/buttom_soup"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="350dp"
+        android:insetRight="10dp"
+        android:text="@string/soup"
+        android:drawableLeft="@drawable/ic_baseline_star_24"
+        app:backgroundTint="#ffee58"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/button_cakes"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="400dp"
+        android:insetRight="10dp"
+        android:text="@string/cakes"
+        android:drawableLeft="@drawable/ic_baseline_star_24"
+        app:backgroundTint="#ffeb3b"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/button_ice"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="450dp"
+        android:insetRight="10dp"
+        android:text="@string/ice"
+        android:drawableLeft="@drawable/ic_baseline_star_24"
+        app:backgroundTint="#fdd835"
+        android:textColor="@color/black"
+        />
+
+
+
+    <Button
+        android:id="@+id/button_special"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="500dp"
+        android:insetRight="10dp"
+        android:text="@string/special"
+        android:drawableLeft="@drawable/ic_baseline_star_24"
+        app:backgroundTint="#fbc02d"
+        android:textColor="@color/black"
+        />
+
+
+
+
 </FrameLayout>
